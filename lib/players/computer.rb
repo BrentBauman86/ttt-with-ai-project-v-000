@@ -2,11 +2,6 @@ require "pry"
 module Players
   class Computer < Player
 
-elsif board.turn_count == 5
-  if board.taken?(2) && board.taken?(1)
-
-
-
     def move(board)
       if board.turn_count == 0
         "1"
