@@ -21,18 +21,18 @@ module Players
     end
   end
 
-    def corners
-      "1" unless taken?(1)
-      "3" unless taken?(3)
-      "6" unless taken?(6)
-      "9" unless taken?(9)
+    def corners(board)
+      "1" unless board.taken?(1)
+      "3" unless board.taken?(3)
+      "6" unless board.taken?(6)
+      "9" unless board.taken?(9)
     end
 
-    def edges
-      "2" unless taken?(2)
-      "4" unless taken?(4)
-      "6" unless taken?(6)
-      "8" unless taken?(8)
+    def edges(board)
+      "2" unless board.taken?(2)
+      "4" unless board.taken?(4)
+      "6" unless board.taken?(6)
+      "8" unless board.taken?(8)
     end
 
   end
