@@ -13,12 +13,13 @@ module Players
         end
 
 
-elsif board.turn_count == 2
-  9 unless board.taken?(9)
-  corners(board)
-elsif board.turn_count == 3
+      elsif board.turn_count == 2
+        9 unless board.taken?(9)
+          corners(board)
+      elsif board.turn_count == 3
         if board.taken?(5)
-      if board.taken?(1)
+          if board.taken?(1)
+          else 
         (rand(9) + 1).to_s
     end
   end
