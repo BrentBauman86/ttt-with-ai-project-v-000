@@ -2,7 +2,7 @@ require "pry"
 module Players
   class Computer < Player
 
-    def move
+    def move(board)
       if turn_count == 0
         1
       elsif turn_count == 1
