@@ -26,7 +26,7 @@ module Players
             "6"
         end
       # else (rand(9) + 1).to_s
-      # end
+      end
     end
   end
 
