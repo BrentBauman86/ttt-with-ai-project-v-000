@@ -16,7 +16,15 @@ module Players
         corners(board)
       elsif board.turn_count == 3
         if board.taken?(5)
-        if board.taken?(1)
+          if board.taken?(1)
+            "9"
+          elsif board.taken?(2)
+            "8"
+          elsif board.taken?(3)
+            "7"
+          elsif board.taken?(4)
+            "6"
+        end
       else (rand(9) + 1).to_s
       end
     end
