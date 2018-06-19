@@ -17,7 +17,7 @@ module Players
       elsif board.turn_count == 3
         edges(board)
       elsif board.turn_count == 4
-        if board.taken?(2) && board.taken?(5)
+        if board.taken?(2) && board.taken?(5) && !board.taken?(8)
           "8"
         elsif board.taken?(8) && board.taken?(5)
           "2"
@@ -31,7 +31,7 @@ module Players
           (rand(9) + 1).to_s
         end
       elsif board.turn_count == 5
-        if board.taken?(2) && board.taken?(1)
+        if board.taken?(2) && board.taken?(1) && !board.taken?(3)
           "3"
         elsif board.taken?(4) && board.taken?(1)
           "7"
@@ -43,7 +43,7 @@ module Players
           (rand(9) + 1).to_s
         end
       elsif board.turn_count == 6
-        if board.taken?(3) && board.taken?(5)
+        if board.taken?(3) && board.taken?(5) && !board.taken?(7)
           "7"
         elsif board.taken?(7) && board.taken?(5)
           "3"
