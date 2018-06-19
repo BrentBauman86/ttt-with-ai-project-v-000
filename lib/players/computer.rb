@@ -35,7 +35,7 @@ module Players
       "8" unless board.taken?(8)
     end
 
+      end
+    end
   end
-end
-end
 end
