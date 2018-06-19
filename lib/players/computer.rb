@@ -18,6 +18,7 @@ module Players
         if board.taken?(5)
         if board.taken?(1)
       else (rand(9) + 1).to_s
+      end
     end
   end
 
