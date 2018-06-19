@@ -3,6 +3,7 @@ module Players
   class Computer < Player
 
     def move(board)
+      binding.pry
       if board.turn_count == 0
         1
       elsif board.turn_count == 1
