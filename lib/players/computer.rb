@@ -6,19 +6,19 @@ module Players
       if board.turn_count == 0
         "1"
       elsif board.turn_count == 1
-        if taken?(5)
+        if !board.taken?(5)
           "5"
-        elsif taken?(5)
-          corners
+        elsif board.taken?(5)
+          corners(board)
         end
 
 
 elsif board.turn_count == 2
-  9 unless taken?(9)
-  corners
+  9 unless board.taken?(9)
+  corners(board)
 elsif board.turn_count == 3
-        edges
-      else
+        if board.taken?(5)
+      if board.taken?(1)
         (rand(9) + 1).to_s
     end
   end
