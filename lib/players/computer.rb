@@ -25,7 +25,7 @@ module Players
           elsif board.taken?(4)
             "6"
         end
-      # else (rand(9) + 1).to_s
+      else (rand(9) + 1).to_s
       end
     end
   end
