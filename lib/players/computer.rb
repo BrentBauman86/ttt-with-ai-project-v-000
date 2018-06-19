@@ -14,7 +14,7 @@ module Players
 
 
       elsif board.turn_count == 2
-        9 unless board.taken?(9)
+          9 unless board.taken?(9)
           corners(board)
       elsif board.turn_count == 3
         if board.taken?(5)
