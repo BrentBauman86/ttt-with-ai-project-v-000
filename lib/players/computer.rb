@@ -4,10 +4,10 @@ module Players
 
     def move(board)
       if board.turn_count == 0
-        1
+        "1"
       elsif board.turn_count == 1
         if taken?(5)
-          5
+          "5"
         elsif taken?(5)
           corners
         end
@@ -24,17 +24,17 @@ elsif board.turn_count == 3
   end
 
     def corners
-      1 unless taken?(1)
-      3 unless taken?(3)
-      6 unless taken?(6)
-      9 unless taken?(9)
+      "1" unless taken?(1)
+      "3" unless taken?(3)
+      "6" unless taken?(6)
+      "9" unless taken?(9)
     end
 
     def edges
-      2 unless taken?(2)
-      4 unless taken?(4)
-      6 unless taken?(6)
-      8 unless taken?(8)
+      "2" unless taken?(2)
+      "4" unless taken?(4)
+      "6" unless taken?(6)
+      "8" unless taken?(8)
     end
 
   end
