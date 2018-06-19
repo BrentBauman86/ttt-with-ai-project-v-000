@@ -2,21 +2,21 @@ require "pry"
 module Players
   class Computer < Player
 
-    def move(board)
-      if board.turn_count == 0
+    def move
+      if turn_count == 0
         1
-      elsif board.turn_count == 1
-        if !board.taken?(5)
+      elsif turn_count == 1
+        if taken?(5)
           5
         elsif taken?(5)
           corners
         end
 
 
-elsif board.turn_count == 2
+elsif turn_count == 2
   9 unless taken?(9)
   corners
-elsif board.turn_count == 3
+elsif turn_count == 3
         edges
       else
         (rand(9) + 1).to_s
