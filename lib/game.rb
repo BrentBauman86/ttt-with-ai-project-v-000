@@ -49,7 +49,7 @@ class Game
     input = current_player.move(board)
     if board.valid_move?(input)
        board.update(input, current_player)
-       board.display 
+       board.display
     else
       puts "That is an invalid move."
        turn
