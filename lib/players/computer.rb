@@ -19,13 +19,13 @@ module Players
       elsif board.turn_count == 4
         if board.taken?(2) && board.taken?(5) && !board.taken?(8)
           "8"
-        elsif board.taken?(8) && board.taken?(5)
+        elsif board.taken?(8) && board.taken?(5) && !board.taken?(2)
           "2"
-        elsif board.taken?(4) && board.taken?(5)
+        elsif board.taken?(4) && board.taken?(5) && !board.taken?(6)
           "6"
-        elsif board.taken?(6) && board.taken?(5)
+        elsif board.taken?(6) && board.taken?(5) && !board.taken?(4)
           "4"
-        elsif board.taken?(3) && board.taken?(5)
+        elsif board.taken?(3) && board.taken?(5) && !board.taken?(7)
           "7"
         else
           (rand(9) + 1).to_s
