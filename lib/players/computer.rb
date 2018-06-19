@@ -4,7 +4,7 @@ module Players
 
 elsif board.turn_count == 5
   if board.taken?(2) && board.taken?(1)
-    
+
 
 
     def move(board)
@@ -48,7 +48,7 @@ elsif board.turn_count == 4
     "7"
   else
     (rand(9) + 1).to_s
-  end 
+  end
   elsif board.turn_count == 5
     if board.taken?(2) && board.taken?(1)
       "3"
@@ -58,9 +58,9 @@ elsif board.turn_count == 4
       "3"
     elsif board.taken?(8) && board.taken?(9)
       "7"
-    else 
+    else
       (rand(9) + 1).to_s
-    end 
+    end
 
   elsif board.turn_count == 6
     if board.taken?(3) && board.taken?(5)
@@ -71,9 +71,9 @@ elsif board.turn_count == 4
       "4"
     elsif board.taken?(4) && board.taken?(5)
       "6"
-    else 
+    else
       (rand(9) + 1).to_s
-    end 
+    end
 
     elsif board.turn_count == 7
       if board.taken?(1) && board.taken?(7)
@@ -84,14 +84,14 @@ elsif board.turn_count == 4
         "8"
       elsif board.taken?(9) && board.taken?(3)
         "6"
-      else 
+      else
         (rand(9) + 1).to_s
       end
-    else 
+    else
       (rand(9) + 1).to_s
     end
-  end 
-    
+  end
+
     def corners(board)
       "1" unless board.taken?(1)
       "3" unless board.taken?(3)
