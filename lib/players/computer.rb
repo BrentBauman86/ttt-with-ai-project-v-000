@@ -3,9 +3,9 @@ module Players
   class Computer < Player
 
     def move(board)
-      if turn_count == 0
+      if board.turn_count == 0
         1
-      elsif turn_count == 1
+      elsif board.turn_count == 1
         if taken?(5)
           5
         elsif taken?(5)
@@ -13,10 +13,10 @@ module Players
         end
 
 
-elsif turn_count == 2
+elsif board.turn_count == 2
   9 unless taken?(9)
   corners
-elsif turn_count == 3
+elsif board.turn_count == 3
         edges
       else
         (rand(9) + 1).to_s
