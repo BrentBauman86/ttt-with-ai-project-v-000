@@ -19,8 +19,7 @@ module Players
       elsif board.turn_count == 3
         if board.taken?(5)
           if board.taken?(1)
-          else 
-        (rand(9) + 1).to_s
+            else (rand(9) + 1).to_s
     end
   end
 
@@ -41,4 +40,4 @@ module Players
   end
 end
 end
-end 
+end
