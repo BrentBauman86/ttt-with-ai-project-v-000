@@ -57,6 +57,7 @@ module Players
       elsif board.turn_count == 7
         if board.taken?(1) && board.taken?(7)
           "4"
+          unless taken?
         elsif board.taken?(1) && board.taken?(3)
           "2"
         elsif board.taken?(7) && board.taken?(9)
@@ -87,4 +88,3 @@ module Players
 
   end
 end
-
